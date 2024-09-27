@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #f1f9fb;
+}
+header {
+  height: 60px;
+  width: 100%;
+  background: #024f55;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+header .logo img {
+  width: 8rem;
+  cursor: pointer;
+}
+header .menu-icon img {
+  width: 2rem;
+  cursor: pointer;
+}
+.menu-bar .close-icon {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 2.2rem;
+  opacity: 0.9;
+}
+.close-icon img {
+  width: 100%;
+  cursor: pointer;
+}
+header .menu-bar {
+  height: 100vh;
+  width: 500px;
+  background: #3c949e;
+  position: absolute;
+  display: none;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s;
+  z-index: 100;
+}
+.menu-bar .all-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+  margin-top: 100px;
+}
+header .menu-bar a {
+  text-decoration: none;
+  color: #024f55;
+  width: 100%;
+  transition: 0.5s;
+}
+header .menu-bar div {
+  font-size: 1.3rem;
+  font-weight: 600;
+  height: 4rem;
+  width: 100%;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.menu-bar a:hover {
+  background: #efefef;
+}
+main .hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.all-products {
+  margin: 15px 0px;
+  overflow: hidden;
+}
+.list-name h1 {
+  text-align: center;
+  margin: 25px 0;
+}
+.all-products > h1 {
+  margin: 11px;
+}
+.all-products .list-name > a {
+  font-size: 0.9rem;
+}
+.product-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+  width: 100%;
+}
+.product-list .products {
+  height: 400px;
+  width: 250px;
+  background: #fff;
+  cursor: pointer;
+}
+.item .img-box img:hover {
+  scale: 1.1;
+}
+.products .detail {
+  padding: 15px;
+  color: #024f55;
+}
+.detail p {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.item .img-box {
+  height: 300px;
+  width: 250px;
+  background: #d5f2f8;
+  padding: 23px;
+}
+.item .img-box img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+footer {
+  height: 300px;
+  width: 100%;
+  background: #024f55;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+footer p {
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  header .menu-bar {
+    width: 100%;
+  }
+}
